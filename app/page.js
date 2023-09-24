@@ -1,6 +1,7 @@
 import ContentMainPage from "@/components/ContentMainPage";
 import Division from "@/components/Division";
-import Introduce from "@/components/Introduce";
+import IntroduceProject from "@/components/IntroduceProject";
+import MemberList from "@/components/MemberList";
 import Navigator from "@/components/Navigator";
 
 export default function Home() {
@@ -14,7 +15,9 @@ export default function Home() {
         <div>
           <ContentMainPage />
           <Division />
-          <Introduce />
+          <IntroduceProject />
+          <Division />
+          <MemberList />
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 const Division = () => {
   return (
-    <div>
+    <div className="my-[50px]">
       <div className="flex justify-between">
         <h1>🧿</h1>
         <h1 className="flex items-center gap-2 justify-items-center">
