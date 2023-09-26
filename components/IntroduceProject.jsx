@@ -11,7 +11,7 @@ const IntroduceProject = () => {
   const introRef = useRef(null);
   useEffect(() => {
     setRef((pre) => ({ ...pre, introRef: introRef.current }));
-  }, []);
+  }, [introRef]);
   return (
     <div ref={introRef} className="mt-10">
       <div className="li-do-chon-de-tai h-[1500px] w-full relative">
@@ -35,6 +35,7 @@ const IntroduceProject = () => {
             }}
           >
             <Image
+              alt=""
               src={"/images/passion.png"}
               width={300}
               height={300}
@@ -51,8 +52,10 @@ const IntroduceProject = () => {
           >
             {"Combining my passion with technology and exciting business opportunities."
               .split(" ")
-              .map((x) => (
-                <motion.span variants={textAnimate}>{x + " "}</motion.span>
+              .map((x, index) => (
+                <motion.span key={index} variants={textAnimate}>
+                  {x + " "}
+                </motion.span>
               ))}
           </motion.h1>
         </motion.div>
@@ -68,6 +71,7 @@ const IntroduceProject = () => {
             }}
           >
             <Image
+              alt=""
               src={"/images/network.png"}
               width={300}
               height={300}
@@ -83,8 +87,10 @@ const IntroduceProject = () => {
           >
             {"Building a professional and effective website can help develop skills in business management and technology, establish a brand, and provide value to customers."
               .split(" ")
-              .map((x) => (
-                <motion.span variants={textAnimate}>{x + " "}</motion.span>
+              .map((x, index) => (
+                <motion.span key={index} variants={textAnimate}>
+                  {x + " "}
+                </motion.span>
               ))}
           </motion.h1>
         </motion.div>
@@ -100,6 +106,7 @@ const IntroduceProject = () => {
             }}
           >
             <Image
+              alt=""
               src={"/images/chance.jpg"}
               width={300}
               height={300}
@@ -115,8 +122,10 @@ const IntroduceProject = () => {
           >
             {"An exciting opportunity to challenge oneself and the team to showcase creativity in this field."
               .split(" ")
-              .map((x) => (
-                <motion.span variants={textAnimate}>{x + " "}</motion.span>
+              .map((x, index) => (
+                <motion.span key={index} variants={textAnimate}>
+                  {x + " "}
+                </motion.span>
               ))}
           </motion.h1>
         </motion.div>

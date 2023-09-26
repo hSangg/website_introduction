@@ -11,12 +11,13 @@ const ContentMainPage = () => {
           whileInView={{ opacity: [0, 1], width: ["0px", "200px"] }}
           className="absolute w-[150px] h-[200px] right-[200px] top-[200px]"
         >
-          <Image fill objectFit="cover" src={"/images/object3d.png"} />
+          <Image alt="" fill objectFit="cover" src={"/images/object3d.png"} />
         </motion.div>
 
         <h1 className="text-[80px] font-bold mt-[200px] ">
-          <div className="w-[250px] z-10 h-[250px] sticky top-10 left-10 mix-blend-difference">
+          <div className="w-[200px] z-10 h-[200px] sticky top-10 left-10 mix-blend-difference">
             <Image
+              alt=""
               className="rounded"
               src={"/images/tai-lanh-tiem-an.webp"}
               fill
@@ -27,6 +28,7 @@ const ContentMainPage = () => {
             <motion.div className="">Building a website for selling</motion.div>
             <div className="relative w-full h-[300px]">
               <Image
+                alt=""
                 src={"/images/tech-1.jpg"}
                 fill
                 style={{ objectFit: "contain", objectPosition: "top" }}
@@ -35,6 +37,7 @@ const ContentMainPage = () => {
           </div>
           <motion.div className="absolute w-[250px] left-[50%] translate-x-[-50%] bottom-[-100px] h-[70px]">
             <Image
+              alt=""
               fill
               style={{ objectFit: "cover" }}
               src={"/images/productcolor.png"}

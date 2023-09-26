@@ -13,6 +13,7 @@ const Member = ({ name, email, position, github, class_, imageName }) => {
             className="sticky top-10 left-0 z-10 w-[300px]"
           >
             <Image
+              alt=""
               src={`/images/${imageName}`}
               width={300}
               height={300}
@@ -26,6 +27,7 @@ const Member = ({ name, email, position, github, class_, imageName }) => {
 
           <motion.div whileInView={{ opacity: [0, 1] }} className="">
             <Image
+              alt=""
               src={"/images/Asset1.png"}
               width={300}
               height={300}

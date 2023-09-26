@@ -8,7 +8,7 @@ const MemberList = () => {
   const { ref, setRef } = useContext(TargetContext);
   useEffect(() => {
     setRef((pre) => ({ ...pre, teamMemberRef: teamMemberRef.current }));
-  }, []);
+  }, [teamMemberRef]);
 
   return (
     <div ref={teamMemberRef} className="pt-[100px]">
