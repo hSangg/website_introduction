@@ -6,6 +6,7 @@
   margin: 0;
   bottom: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
@@ -33,6 +34,24 @@ body {
 
 .EurekaEndeavour {
   font-family: "EurekaEndeavour" !important;
+}
+
+@font-face {
+  font-family: "Benzin";
+  src: url("../public/fonts/Benzin.ttf");
+}
+
+.Benzin {
+  font-family: "Benzin" !important;
+}
+
+@font-face {
+  font-family: "CODEINK";
+  src: url("../public/fonts/CODEINK.ttf");
+}
+
+.CODEINK {
+  font-family: "CODEINK" !important;
 }
 /* --------------------------------------------------- */
 

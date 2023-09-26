@@ -14,24 +14,25 @@ const ContentMainPage = () => {
           <Image fill objectFit="cover" src={"/images/object3d.png"} />
         </motion.div>
 
-        <h1 className="text-[100px] font-bold mt-[200px] tracking-tighter ">
-          <div className="w-[400px] h-[200px] sticky top-0 mix-blend-difference">
+        <h1 className="text-[80px] font-bold mt-[200px] ">
+          <div className="w-[250px] z-10 h-[250px] sticky top-10 left-10 mix-blend-difference">
             <Image
-              className=""
-              src={"/images/banner1.jpg"}
+              className="rounded"
+              src={"/images/tai-lanh-tiem-an.webp"}
               fill
               style={{ objectFit: "contain" }}
             />
           </div>
-          XÂY DỰNG{" "}
-          <motion.span
-            whileInView={{ opacity: [0, 1], x: [10, 0] }}
-            className=""
-          >
-            <span className="EurekaEndeavour">W</span>ebsit
-            <span className="EurekaEndeavour">E</span>
-          </motion.span>{" "}
-          <br></br> BÁN HÀNG ĐIỆN TỬ, <br></br> ĐỒ CÔNG NGHỆ
+          <div className="Benzin uppercase leading-[100px] flex flex-col items-center cursor-default">
+            <motion.div className="">Building a website for selling</motion.div>
+            <div className="relative w-full h-[300px]">
+              <Image
+                src={"/images/tech-1.jpg"}
+                fill
+                style={{ objectFit: "contain", objectPosition: "top" }}
+              />
+            </div>
+          </div>
           <motion.div className="absolute w-[250px] left-[50%] translate-x-[-50%] bottom-[-100px] h-[70px]">
             <Image
               fill

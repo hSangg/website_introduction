@@ -2,17 +2,26 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useContext, useEffect, useRef } from "react";
+import { TargetContext } from "@/app/page";
+import { textAnimate } from "@/utils/farmerMotionTemplete";
 
 const IntroduceProject = () => {
+  const { ref, setRef } = useContext(TargetContext);
+  const introRef = useRef(null);
+  useEffect(() => {
+    setRef((pre) => ({ ...pre, introRef: introRef.current }));
+  }, []);
   return (
-    <div className="mt-10">
+    <div ref={introRef} className="mt-10">
       <div className="li-do-chon-de-tai h-[1500px] w-full relative">
         <h1
-          className="z-10 
-          mix-blend-exclusion pointer-events-none
-        sticky top-[50%] text-center text-5xl translate-y-[-50%] uppercase"
+          className="z-10 pt-10
+          mix-blend-exclusion pointer-events-none CODEINK
+        sticky top-[50%] text-center text-5xl 
+        translate-y-[-50%] uppercase"
         >
-          <strong>Lí do</strong> chọn đề tài
+          The reason for <br></br> choosing this topic.
         </h1>
 
         <motion.div
@@ -33,10 +42,19 @@ const IntroduceProject = () => {
               className="image-reason"
             />
           </motion.div>
-          <h1 className="w-[300px] text-center mt-3">
-            Kết hợp sự đam mê của tôi với <strong>công nghệ</strong> và{" "}
-            <strong>cơ hội kinh doanh</strong> hấp dẫn.
-          </h1>
+
+          <motion.h1
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            transition={{ staggerChildren: 0.05 }}
+            className="w-[300px] text-left mt-3"
+          >
+            {"Combining my passion with technology and exciting business opportunities."
+              .split(" ")
+              .map((x) => (
+                <motion.span variants={textAnimate}>{x + " "}</motion.span>
+              ))}
+          </motion.h1>
         </motion.div>
 
         <motion.div
@@ -57,11 +75,18 @@ const IntroduceProject = () => {
               className="image-reason"
             />
           </motion.div>
-          <h1 className="w-[300px] text-left mt-3">
-            Xây dựng một trang web chuyên nghiệp và hiệu quả có thể giúp tôi
-            phát triển kỹ năng quản lý kinh doanh và công nghệ, tạo thương hiệu
-            và cung cấp giá trị cho khách hàng.
-          </h1>
+          <motion.h1
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            transition={{ staggerChildren: 0.05 }}
+            className="w-[300px] text-left mt-3"
+          >
+            {"Building a professional and effective website can help develop skills in business management and technology, establish a brand, and provide value to customers."
+              .split(" ")
+              .map((x) => (
+                <motion.span variants={textAnimate}>{x + " "}</motion.span>
+              ))}
+          </motion.h1>
         </motion.div>
 
         <motion.div
@@ -82,10 +107,18 @@ const IntroduceProject = () => {
               className="image-reason"
             />
           </motion.div>
-          <h1 className="w-[300px] text-left mt-3">
-            Là cơ hội thú vị để thách thức bản thân và tập thể để thể hiện sự
-            sáng tạo trong lĩnh vực này.
-          </h1>
+          <motion.h1
+            initial={"offscreen"}
+            whileInView={"onscreen"}
+            transition={{ staggerChildren: 0.05 }}
+            className="w-[300px] text-left mt-3"
+          >
+            {"An exciting opportunity to challenge oneself and the team to showcase creativity in this field."
+              .split(" ")
+              .map((x) => (
+                <motion.span variants={textAnimate}>{x + " "}</motion.span>
+              ))}
+          </motion.h1>
         </motion.div>
       </div>
     </div>

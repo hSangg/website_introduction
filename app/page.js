@@ -1,24 +1,32 @@
+"use client";
 import ContentMainPage from "@/components/ContentMainPage";
 import Division from "@/components/Division";
 import IntroduceProject from "@/components/IntroduceProject";
 import MemberList from "@/components/MemberList";
 import Navigator from "@/components/Navigator";
+import { createContext, useState } from "react";
+
+export const TargetContext = createContext();
 
 export default function Home() {
+  const [ref, setRef] = useState();
+
   return (
     <div className="container mx-auto">
       <div className="mx-[20px]">
-        <div className="header">
-          <Navigator />
-        </div>
+        <TargetContext.Provider value={{ ref, setRef }}>
+          <div className="header">
+            <Navigator />
+          </div>
 
-        <div>
-          <ContentMainPage />
-          <Division />
-          <IntroduceProject />
-          <Division />
-          <MemberList />
-        </div>
+          <div>
+            <ContentMainPage />
+            <Division />
+            <IntroduceProject />
+            <Division />
+            <MemberList />
+          </div>
+        </TargetContext.Provider>
       </div>
     </div>
   );
