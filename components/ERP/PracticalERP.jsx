@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import { motion } from "framer-motion";
 const rows = [
   {
     content:
@@ -36,7 +36,7 @@ const rows = [
 const PracticalERP = () => {
   return (
     <div className="mt-20">
-      <div className="li-do-chon-de-tai h-[700px] w-full relative">
+      <div className="li-do-chon-de-tai h-[1000px] w-full relative">
         <h1
           className="z-10 pt-10 leading-[55px]
   mix-blend-exclusion pointer-events-none
@@ -46,25 +46,34 @@ translate-y-[-50%] uppercase"
           Tính thực tế của dự án, <br></br> cơ sở thực tiễn
         </h1>
 
-        <table className="w-1/2 mx-auto border border-white">
-          <thead className=" p-2 border border-white">
-            <tr className="">
-              <th className="border border-white">Nội dung</th>
-              <th className="p-2">Link tham khảo</th>
+        <table className="mx-auto w-3/4 text-[1.3rem] ">
+          <thead className="p-2">
+            <tr className="uppercase">
+              <th className="">Nội dung</th>
+              <th className="p-2 w-[200px]">Link tham khảo</th>
             </tr>
           </thead>
-          <tbody className="border border-white">
+          <motion.tbody className=" ">
             {rows.map((row, index) => (
-              <tr key={index} className="text-center ">
-                <td className="text-left border border-white p-2">
+              <motion.tr
+                key={index}
+                className="text-center origin-left border-b-[2px] border-white/20 transition-all hover:bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-amber-200 via-violet-600 to-sky-900"
+              >
+                <motion.td
+                  whileHover={{
+                    scale: 1.1,
+                  }}
+                  transition={{ type: "spring", duration: 0.5 }}
+                  className="text-left px-6 py-4 origin-left "
+                >
                   {row.content}
-                </td>
-                <td className="border-white border">
+                </motion.td>
+                <td className="   ">
                   {row.link != "" ? <Link href={row.link}>✅</Link> : "❌"}
                 </td>
-              </tr>
+              </motion.tr>
             ))}
-          </tbody>
+          </motion.tbody>
         </table>
       </div>
     </div>
