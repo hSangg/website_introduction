@@ -2,6 +2,7 @@
 import ContentMainPageERP from "@/components/ERP/ContentMainPageERP";
 import DivisionERP from "@/components/ERP/DivisionERP";
 import ExpectERP from "@/components/ERP/ExpectERP";
+import PracticalERP from "@/components/ERP/PracticalERP";
 import ProgressERP from "@/components/ERP/ProgressERP";
 import ScopeERP from "@/components/ERP/ScopeERP";
 import TargetERP from "@/components/ERP/TargetERP";
@@ -21,6 +22,8 @@ export default function Home() {
           <ScopeERP />
           <DivisionERP />
           <ExpectERP />
+          <DivisionERP />
+          <PracticalERP />
           <DivisionERP />
           <ProgressERP />
         </div>

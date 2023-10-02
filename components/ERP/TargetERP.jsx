@@ -1,10 +1,8 @@
 "use client";
 
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { useContext, useEffect, useRef } from "react";
-import { TargetContext } from "@/app/page";
 import { textAnimate } from "@/utils/farmerMotionTemplete";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 const TargetERP = () => {
   return (
