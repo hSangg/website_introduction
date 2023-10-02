@@ -17,7 +17,7 @@ const ExpectERP = () => {
             initial={"offscreen"}
             whileInView={"onscreen"}
             transition={{ staggerChildren: 0.05 }}
-            className="w-[300px] mt-3 text-[1.6rem]"
+            className="w-[300px] mt-3 text-[1.8rem]"
           >
             {"Tăng trưởng doanh số bán hàng và lợi nhuận theo thời gian, đạt được sự tăng trưởng ổn định và bền vững."
               .split(" ")
@@ -34,7 +34,7 @@ const ExpectERP = () => {
             initial={"offscreen"}
             whileInView={"onscreen"}
             transition={{ staggerChildren: 0.05 }}
-            className="w-[300px] mt-3 text-[1.6rem]"
+            className="w-[300px] mt-3 text-[1.8rem]"
           >
             {"Nắm bắt xu hướng công nghệ mới nhất và cung cấp sản phẩm và dịch vụ phù hợp với nhu cầu của thị trường."
               .split(" ")
@@ -51,7 +51,7 @@ const ExpectERP = () => {
             initial={"offscreen"}
             whileInView={"onscreen"}
             transition={{ staggerChildren: 0.05 }}
-            className="w-[300px] mt-3 text-[1.6rem]"
+            className="w-[300px] mt-3 text-[1.8rem]"
           >
             {"Xây dựng và duy trì một cơ sở khách hàng trung thành và mở rộng cơ sở khách hàng thông qua quảng cáo, tiếp thị và chăm sóc khách hàng hiệu quả."
               .split(" ")
@@ -68,7 +68,7 @@ const ExpectERP = () => {
             initial={"offscreen"}
             whileInView={"onscreen"}
             transition={{ staggerChildren: 0.05 }}
-            className="w-[300px] mt-3 text-[1.6rem]"
+            className="w-[300px] mt-3 text-[1.8rem]"
           >
             {"Thực hiện các chiến dịch tiếp thị và quảng cáo hiệu quả để tạo ra lưu lượng truy cập và tăng số lượng đăng ký thành viên."
               .split(" ")

@@ -11,10 +11,12 @@ const TargetERP = () => {
     <div className="mt-10">
       <div className="li-do-chon-de-tai h-[1500px] w-full relative">
         <h1
-          className="z-10 pt-10
+          className="z-10 mt-10
           mix-blend-exclusion pointer-events-none
-        sticky top-[50%] text-center text-5xl 
-        translate-y-[-50%] uppercase"
+        sticky top-[50%] text-center text-5xl left-1/2 -translate-x-1/2
+        translate-y-[-50%] uppercase font-[700]
+        bg-white/10 backdrop-blur-md inline-block
+        "
         >
           Lí do chọn đề tài
         </h1>
@@ -43,7 +45,7 @@ const TargetERP = () => {
             initial={"offscreen"}
             whileInView={"onscreen"}
             transition={{ staggerChildren: 0.05 }}
-            className="w-[300px] text-left mt-3"
+            className="w-[300px] text-left mt-3 text-[1.8rem]"
           >
             {"Xây dựng 1 mô hình kinh doanh hoàn chỉnh, tối ưu hóa quy trình mua sắm."
               .split(" ")
@@ -57,7 +59,7 @@ const TargetERP = () => {
 
         <motion.div
           whileInView={{ scale: [0.5, 1], opacity: [0.5, 1] }}
-          className="absolute top-[200px] right-[200px]"
+          className="absolute top-[300px] right-[200px]"
         >
           <motion.div
             whileHover={{
@@ -78,7 +80,7 @@ const TargetERP = () => {
             initial={"offscreen"}
             whileInView={"onscreen"}
             transition={{ staggerChildren: 0.05 }}
-            className="w-[300px] text-left mt-3"
+            className="w-[300px] text-left mt-3 text-[1.8rem]"
           >
             {"Tạo nền tảng cho tương lai: Xây dựng một hệ thống ERP linh hoạt và mở rộng có khả năng thích nghi với sự phát triển của công ty và thị trường công nghệ."
               .split(" ")
@@ -92,7 +94,7 @@ const TargetERP = () => {
 
         <motion.div
           whileInView={{ scale: [0.5, 1], opacity: [0.5, 1] }}
-          className="absolute top-[600px] left-[200px]"
+          className="absolute top-[800px] left-[200px]"
         >
           <motion.div
             whileHover={{
@@ -113,7 +115,7 @@ const TargetERP = () => {
             initial={"offscreen"}
             whileInView={"onscreen"}
             transition={{ staggerChildren: 0.05 }}
-            className="w-[300px] text-left mt-3"
+            className="w-[300px] text-left mt-3 text-[1.8rem]"
           >
             {"Nâng cao khả năng làm việc nhóm: Cải thiện quản lý các thành viên, bao gồm quy trình quản lý hiệu suất, và phát triển bản thân."
               .split(" ")
