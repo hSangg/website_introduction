@@ -16,7 +16,7 @@ const ProgressERP = () => {
      top-[50%] text-center text-5xl 
     translate-y-[-50%] uppercase"
         >
-          Tiến độ dự án
+          Tiến độ dự án (DỰ KIẾN)
         </h1>
 
         <motion.div className="absolute top-[100px] ">

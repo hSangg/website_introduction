@@ -53,9 +53,14 @@ translate-y-[-50%] uppercase"
               <th className="p-2 w-[200px]">Link tham khảo</th>
             </tr>
           </thead>
-          <motion.tbody className=" ">
+          <motion.tbody
+            initial="offscreen"
+            whileInView="onscreen"
+            transition={{ staggerChildren: 0.2 }}
+          >
             {rows.map((row, index) => (
               <motion.tr
+                variants={textAnimate}
                 key={index}
                 className="text-center origin-left border-b-[2px] border-white/20 transition-all hover:bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-amber-200 via-violet-600 to-sky-900"
               >
@@ -81,3 +86,15 @@ translate-y-[-50%] uppercase"
 };
 
 export default PracticalERP;
+
+export const textAnimate = {
+  offscreen: { opacity: 0 },
+  onscreen: {
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 1,
+    },
+  },
+};
