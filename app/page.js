@@ -1,7 +1,6 @@
 "use client";
 import ContentMainPage from "@/components/ContentMainPage";
 import Division from "@/components/Division";
-import SybsystemDeploy from "@/components/ERP/subsystemDeploy";
 import IntroduceProject from "@/components/IntroduceProject";
 import MemberList from "@/components/MemberList";
 import Navigator from "@/components/Navigator";
