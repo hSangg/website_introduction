@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 const ScopeERP = () => {
   return (
     <div className="mt-10">
-      <div className="li-do-chon-de-tai h-[700px] w-full relative">
+      <div className="li-do-chon-de-tai h-[500px] w-full relative">
         <h1
-          className="z-10 mt-10 inline-block left-1/2 -translate-x-1/2
+          className="z-10 pt-10 leading-[55px]
           mix-blend-exclusion pointer-events-none
-        sticky top-[50%] text-center text-5xl 
-        translate-y-[-50%] uppercase bg-white/20 backdrop-blur-sm"
+         top-[50%] text-center text-5xl 
+        translate-y-[-50%] uppercase"
         >
           Phạm vi dự án
         </h1>
