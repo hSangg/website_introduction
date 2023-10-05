@@ -16,7 +16,7 @@ const TargetERP = () => {
         bg-white/10 backdrop-blur-md inline-block
         "
         >
-          Lí do chọn đề tài
+          Mục tiêu đồ án
         </h1>
 
         <motion.div
