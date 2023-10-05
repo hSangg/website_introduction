@@ -14,12 +14,16 @@ const ScopeERP = () => {
         </h1>
 
         <div>
-          <h1 className="text-[3rem]">
-            o Quản lý <strong>sản phẩm và dự án</strong> <br></br> o Quản lý{" "}
-            <strong> kho hàng</strong> <br></br> o Quản lý{" "}
-            <strong>tài chính kế toán</strong> <br></br> o Quản lý
-            <strong> phân tích dữ liệu và báo cáo</strong> <br></br> o Quản lý
-            <strong> quy trình mua bán sản phẩm</strong>
+          <h1 className="text-[2.5rem]">
+            o Quản lý <strong>sản phẩm và dự án - E-commerce</strong> <br></br>{" "}
+            o Quản lý <strong> kho hàng - Inventory</strong> <br></br> o Quản lý{" "}
+            <strong>tài chính kế toán - Financial</strong> <br></br> o Quản lý
+            <strong>
+              {" "}
+              phân tích dữ liệu và báo cáo - Accouting
+            </strong> <br></br> o Quản lý
+            <strong> quy trình mua bán sản phẩm - Sales + Purchase</strong>{" "}
+            <br></br>o <strong>Dịch vụ khách hàng</strong> - CRM
           </h1>
         </div>
       </div>

@@ -3,13 +3,12 @@ import { motion } from "framer-motion";
 const rows = [
   {
     content:
-      "Tham khảo về giá cả, hình thức thanh toán, các quy trình như mua hàng, sửa chữa,… và các chính sách bán hàng cũng như dịch vụ khách hàng.",
+      "Tham khảo về giá cả, hình thức thanh toán, các quy trình như mua hàng, sửa chữa,… và các chính sách bán hàng cũng như dịch vụ khách hàng tại <strong>Phong Vũ</strong>",
     link: "https://help.phongvu.vn/",
   },
-
   {
     content:
-      "Điều khoản sử dụng Thegioididong.com – Tham khảo quy trình giao dịch và thanh toán",
+      "Điều khoản sử dụng  – Tham khảo quy trình giao dịch và thanh toán <strong>Thế giới di động</strong>",
     link: "https://www.thegioididong.com/tos",
   },
   {
@@ -70,9 +69,10 @@ translate-y-[-50%] uppercase"
                   }}
                   transition={{ type: "spring", duration: 0.5 }}
                   className="text-left px-6 py-4 origin-left "
-                >
-                  {row.content}
-                </motion.td>
+                  dangerouslySetInnerHTML={{
+                    __html: row.content,
+                  }}
+                ></motion.td>
                 <td className="   ">
                   {row.link != "" ? <Link href={row.link}>✅</Link> : "❌"}
                 </td>
