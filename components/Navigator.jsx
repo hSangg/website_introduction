@@ -24,6 +24,15 @@ const Navigator = () => {
         >
           Members
         </div>
+
+        <div
+          onClick={() => {
+            scrollToRef(ref["progressRef"]);
+          }}
+          className="bg-white text-black px-2 rounded-3xl border-[2px] cursor-pointer"
+        >
+          Progress
+        </div>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import Division from "@/components/Division";
 import IntroduceProject from "@/components/IntroduceProject";
 import MemberList from "@/components/MemberList";
 import Navigator from "@/components/Navigator";
+import Progress from "@/components/Progress";
 import { createContext, useState } from "react";
 
 export const TargetContext = createContext();
@@ -26,6 +27,7 @@ export default function Home() {
             <Division />
             <MemberList />
             <Division />
+            <Progress />
           </div>
         </TargetContext.Provider>
       </div>

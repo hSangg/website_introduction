@@ -10,20 +10,9 @@ const ContentMainPage = () => {
         <motion.div
           whileInView={{ opacity: [0, 1], width: ["0px", "200px"] }}
           className="absolute w-[150px] h-[200px] right-[200px] top-[200px]"
-        >
-          <Image alt="" fill objectFit="cover" src={"/images/object3d.png"} />
-        </motion.div>
+        ></motion.div>
 
         <h1 className="text-[80px] font-bold mt-[200px] ">
-          <div className="w-[200px] z-10 h-[200px] sticky top-10 left-10 mix-blend-difference">
-            <Image
-              alt=""
-              className="rounded"
-              src={"/images/tai-lanh-tiem-an.webp"}
-              fill
-              style={{ objectFit: "contain" }}
-            />
-          </div>
           <div className="Benzin uppercase leading-[100px] flex flex-col items-center cursor-default">
             <motion.div className="">Building a website for selling</motion.div>
             <div className="relative w-full h-[300px]">

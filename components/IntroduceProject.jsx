@@ -50,7 +50,7 @@ const IntroduceProject = () => {
             transition={{ staggerChildren: 0.05 }}
             className="w-[300px] text-left mt-3"
           >
-            {"Combining my passion with technology and exciting business opportunities."
+            {"Kết hợp sự đam mê của nhóm với công nghệ và cơ hội kinh doanh hấp dẫn."
               .split(" ")
               .map((x, index) => (
                 <motion.span key={index} variants={textAnimate}>
@@ -85,7 +85,7 @@ const IntroduceProject = () => {
             transition={{ staggerChildren: 0.05 }}
             className="w-[300px] text-left mt-3"
           >
-            {"Building a professional and effective website can help develop skills in business management and technology, establish a brand, and provide value to customers."
+            {"Việc xây dựng một trang web thương mại điện tử chuyên nghiệp và hiệu quả có thể giúp bọn em phát triển các kỹ năng trong quản lý doanh nghiệp và công nghệ, xây dựng thương hiệu và cung cấp giá trị cho khách hàng."
               .split(" ")
               .map((x, index) => (
                 <motion.span key={index} variants={textAnimate}>
@@ -120,7 +120,7 @@ const IntroduceProject = () => {
             transition={{ staggerChildren: 0.05 }}
             className="w-[300px] text-left mt-3"
           >
-            {"An exciting opportunity to challenge oneself and the team to showcase creativity in this field."
+            {"Cũng là cơ hội, thách thức cho nhóm trong lĩnh vực này."
               .split(" ")
               .map((x, index) => (
                 <motion.span key={index} variants={textAnimate}>
