@@ -17,11 +17,11 @@ const IntroduceProject = () => {
       <div className="li-do-chon-de-tai h-[1500px] w-full relative">
         <h1
           className="z-10 pt-10
-          mix-blend-exclusion pointer-events-none CODEINK
-        sticky top-[50%] text-center text-5xl 
+          mix-blend-exclusion pointer-events-none 
+        text-center text-5xl 
         translate-y-[-50%] uppercase"
         >
-          The reason for <br></br> choosing this topic.
+          Lý do chọn đề tài
         </h1>
 
         <motion.div
@@ -48,7 +48,7 @@ const IntroduceProject = () => {
             initial={"offscreen"}
             whileInView={"onscreen"}
             transition={{ staggerChildren: 0.05 }}
-            className="w-[300px] text-left mt-3"
+            className="w-[300px] text-left mt-3 text-3xl"
           >
             {"Kết hợp sự đam mê của nhóm với công nghệ và cơ hội kinh doanh hấp dẫn."
               .split(" ")
@@ -83,7 +83,7 @@ const IntroduceProject = () => {
             initial={"offscreen"}
             whileInView={"onscreen"}
             transition={{ staggerChildren: 0.05 }}
-            className="w-[300px] text-left mt-3"
+            className="w-[300px] text-left mt-3 text-3xl"
           >
             {"Việc xây dựng một trang web thương mại điện tử chuyên nghiệp và hiệu quả có thể giúp bọn em phát triển các kỹ năng trong quản lý doanh nghiệp và công nghệ, xây dựng thương hiệu và cung cấp giá trị cho khách hàng."
               .split(" ")
@@ -118,7 +118,7 @@ const IntroduceProject = () => {
             initial={"offscreen"}
             whileInView={"onscreen"}
             transition={{ staggerChildren: 0.05 }}
-            className="w-[300px] text-left mt-3"
+            className="w-[300px] text-left mt-3 text-3xl"
           >
             {"Cũng là cơ hội, thách thức cho nhóm trong lĩnh vực này."
               .split(" ")

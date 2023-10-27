@@ -6,6 +6,7 @@ import MemberList from "@/components/MemberList";
 import Navigator from "@/components/Navigator";
 import Progress from "@/components/Progress";
 import Target from "@/components/Target";
+import TeamManagement from "@/components/TeamManagement";
 import { createContext, useState } from "react";
 
 export const TargetContext = createContext();
@@ -32,6 +33,8 @@ export default function Home() {
             <MemberList />
             <Division />
             <Progress />
+            <Division />
+            <TeamManagement />
           </div>
         </TargetContext.Provider>
       </div>

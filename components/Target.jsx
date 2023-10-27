@@ -62,7 +62,7 @@ const Target = () => {
             transition={{ staggerChildren: 0.05 }}
             className="w-[300px] text-left mt-3 text-[1.8rem]"
           >
-            {"Phát triển các tính năng mua sắm trực tuyến, shipping"
+            {"Phát triển các tính năng mua sắm trực tuyến, shipping. Bảo mật và an toàn dữ liệu"
               .split(" ")
               .map((x, index) => (
                 <motion.span key={index} variants={textAnimate}>

@@ -53,6 +53,15 @@ body {
 .CODEINK {
   font-family: "CODEINK" !important;
 }
+
+@font-face {
+  font-family: "FloritaSignature-1Gn9Z";
+  src: url("../public/fonts/FloritaSignature-1Gn9Z.ttf");
+}
+
+.FloritaSignature-1Gn9Z {
+  font-family: "FloritaSignature-1Gn9Z" !important;
+}
 /* --------------------------------------------------- */
 
 .image-reason {

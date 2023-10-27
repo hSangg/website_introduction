@@ -1,6 +1,7 @@
 import { TargetContext } from "@/app/page";
 import Image from "next/image";
 import { useContext, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
 const Progress = () => {
   const progressRef = useRef();
@@ -32,7 +33,7 @@ const Progress = () => {
               backgroundColor: "white",
               padding: "16px",
               borderRadius: "16px",
-            }} // optional
+            }}
           />
           <h1 className="text-center">h/a: use-case diagram</h1>
         </div>
@@ -70,17 +71,29 @@ const Progress = () => {
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: "100%", height: "auto" }} // optional
+                style={{ width: "100%", height: "auto" }}
               />
             </div>
           </div>
           <div className="p-2">
-            <h1 className="font-bold text-4xl">Backend</h1>
-            <div className="p-2 text-3xl">
+            <h1 className="font-bold text-[100px] text-center">Backend</h1>
+            <motion.div
+              initial="inital"
+              whileInView="view"
+              transition={{
+                staggerChildren: 0.2,
+              }}
+              className="p-2 text-3xl text-center divide-y divide-white/50 w-2/3 mx-auto"
+            >
               {taskBackendList.map((x, i) => (
-                <h2 key={i}>{x}</h2>
+                <motion.h2
+                  variants={rowVariant}
+                  key={i}
+                  className="p-4"
+                  dangerouslySetInnerHTML={{ __html: x }}
+                ></motion.h2>
               ))}
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
@@ -98,4 +111,18 @@ const taskFrontEndList = [
   "Xây dựng trang admin dashboard",
 ];
 
-const taskBackendList = ["Kết nối cơ sỡ dự liệu MySQL", "Tạo các route cơ bản"];
+const taskBackendList = [
+  "Kết nối <strong>cơ sỡ dự liệu MySQL</strong>",
+  "Tạo các route cơ bản",
+  "Tạo API register, login phân quyền user",
+  "Tích hợp Json Web Token <strong>(JWT)</strong> vào Authorization",
+];
+
+const rowVariant = {
+  inital: {
+    opacity: 0.2,
+  },
+  view: {
+    opacity: 1,
+  },
+};
