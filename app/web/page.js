@@ -2,6 +2,7 @@
 import Division from "@/components/Division";
 import ContentMainPageWeb from "@/components/WEB/ContentMainPageWeb";
 import MemberListWeb from "@/components/WEB/MemberListWeb";
+import ProgressWeb from "@/components/WEB/ProgressWeb";
 import TargetWeb from "@/components/WEB/TargetWeb";
 
 export default function Home() {
@@ -14,6 +15,8 @@ export default function Home() {
           <MemberListWeb />
           <Division />
           <TargetWeb />
+          <Division />
+          <ProgressWeb />
         </div>
       </div>
     </div>
