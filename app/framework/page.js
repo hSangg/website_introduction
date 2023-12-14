@@ -1,7 +1,7 @@
 "use client";
 import Division from "@/components/Division";
+import MemberListFrameWork from "@/components/FRAMEWORK/MemberListFrameWork";
 import ContentMainPageWeb from "@/components/WEB/ContentMainPageWeb";
-import MemberListWeb from "@/components/WEB/MemberListWeb";
 import ProgressWeb from "@/components/WEB/ProgressWeb";
 import TargetWeb from "@/components/WEB/TargetWeb";
 
@@ -12,7 +12,7 @@ export default function Home() {
         <div>
           <ContentMainPageWeb />
           <Division />
-          <MemberListWeb />
+          <MemberListFrameWork />
           <Division />
           <TargetWeb />
           <Division />

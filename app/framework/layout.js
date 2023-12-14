@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "WEB - Nhóm TNTA_CTCA",
-  description: "Giới thiệu đồ án FRAMEWORK",
+  description: "Giới thiệu đồ án WEB",
 };
 
 export default function RootLayout({ children }) {
