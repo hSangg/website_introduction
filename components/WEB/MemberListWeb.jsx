@@ -23,7 +23,7 @@ export default MemberListWeb;
 const data = [
   {
     name: "Cao Hoài Sang",
-    email: "21522541@uit.edu.com",
+    email: "21522541@gm.uit.edu.com",
     class_: "HTTT2021",
     position: "FE developer & BE developer & UI/UX",
     github: "@hsangg",
