@@ -1,14 +1,31 @@
-import { TargetContext } from "@/app/page";
-import Image from "next/image";
-import { useContext, useEffect, useRef } from "react";
+"use client";
+
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { useRef } from "react";
 
 const ProgressWeb = () => {
+  const ref = useRef();
   return (
-    <div className="pt-24">
+    <div ref={ref} className="pt-24">
       <h1 className="text-center text-5xl uppercase">
         Quy trình phát triển phần mềm
       </h1>
+
+      <div
+        onClick={() => {
+          ref.current.scrollIntoView({
+            behavior: "smooth",
+            block: "end",
+            inline: "nearest",
+          });
+        }}
+        className="flex justify-center opacity-70 "
+      >
+        <h1 className=" text-lg mt-4 cursor-pointer text-center inline-block px-2 py-1  text-white rounded-xl bg-slate-500">
+          Bỏ qua
+        </h1>
+      </div>
 
       <div className="mt-10">
         <h1 className="text-3xl p-4 w-2/3 mx-auto text-center">
