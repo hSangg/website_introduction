@@ -5,11 +5,11 @@ const Division = () => {
         <h1>🧿</h1>
         <h1 className="flex items-center gap-2 justify-items-center">
           <span className="w-[50px] inline-block bg-white h-[2px] "></span> BY
-          TÀI NĂNG TIỀM ẨN, CÀNG TÌM CÀNG ẨN
+          CAO HOÀI SANG
           <span className="w-[50px] inline-block bg-white h-[2px]"></span>
         </h1>
 
-        <h1 className="true">TNTN_CTCA {String.fromCodePoint(8482)}</h1>
+        <h1 className="true">Sang {String.fromCodePoint(8482)}</h1>
       </div>
     </div>
   );
